@@ -2,7 +2,7 @@
 
 namespace ContactWebModels
 {
-    internal class State
+    public class State
     {
         [Key]
         public int Id { get; set; }
@@ -10,9 +10,9 @@ namespace ContactWebModels
         [Required(ErrorMessage = "State name required")]
         [StringLength(ContactManagerConstants.MAX_STATE_NAME_LENGTH)]
         public string Name { get; set; }
-        [Required(ErrorMessage ="Abberviation required")]
+        [Required(ErrorMessage = "Abberviation required")]
         [StringLength(ContactManagerConstants.MAX_STATE_ABBR_LENGTH)]
-        public string Abberviation { get; set; }
+        public string Abbreviation { get; set; }
 
     }
 }

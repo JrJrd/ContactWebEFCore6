@@ -2,9 +2,9 @@
 
 namespace ContactWebModels
 {
-    internal class Contact
+    public class Contact
     {
-        [Key]  
+        [Key]
         public int Id { get; set; }
         [Display(Name = "First Name")]
         [Required(ErrorMessage = "First Name is required.")]
@@ -83,11 +83,11 @@ namespace ContactWebModels
            }*/
 
         [Display(Name = "Address")]
-        public string FriendlyAddress => State is null ? "" : string.IsNullOrWhiteSpace(StreetAddress1) ? $"{City}, {State.Abberviation}, {Zip}" :
+        public string FriendlyAddress => State is null ? "" : string.IsNullOrWhiteSpace(StreetAddress1) ? $"{City}, {State.Abbreviation}, {Zip}" :
                                                                 string.IsNullOrWhiteSpace(StreetAddress2)
-                                                                       ? $"{StreetAddress1}, {City},{State.Abberviation}, {Zip}"
-                                                                       : $"{StreetAddress1} - {StreetAddress2}, {City}, {State.Abberviation}, {Zip}";
-        
+                                                                       ? $"{StreetAddress1}, {City},{State.Abbreviation}, {Zip}"
+                                                                       : $"{StreetAddress1} - {StreetAddress2}, {City}, {State.Abbreviation}, {Zip}";
+
 
     }
 }
