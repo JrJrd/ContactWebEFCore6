@@ -6,19 +6,12 @@ namespace ContactWebModels
     {
         [Key]
         public int Id { get; set; }
-
-
         [Display(Name = "State")]
-
         [Required(ErrorMessage = "State name required")]
-
         [StringLength(ContactManagerConstants.MAX_STATE_NAME_LENGTH)]
         public string Name { get; set; }
-
         [Required(ErrorMessage ="Abberviation required")]
-
         [StringLength(ContactManagerConstants.MAX_STATE_ABBR_LENGTH)]
-       
         public string Abberviation { get; set; }
 
     }

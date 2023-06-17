@@ -4,9 +4,6 @@
     {
         public const int MAX_STATE_NAME_LENGTH = 50;
         public const int MAX_STATE_ABBR_LENGTH = 2;
-
-
-
         public const int MAX_FIRST_NAME_LENGTH = 50;
         public const int MAX_LAST_NAME_LENGTH = 250;
         public const int MAX_EMAIL_LENGTH = 250;
